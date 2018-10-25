@@ -303,7 +303,7 @@ namespace L2_U2_10
                         }
                         else
                             cheapest.Refrigerators.AddRefrigerator(branches[i].Refrigerators.GetRefrigerator(j));
-                        dontAdd = false;
+                            dontAdd = false;
                     }
                 }
             }
@@ -314,7 +314,7 @@ namespace L2_U2_10
         /// Surušiuoja pigiausius šaldytuvus pagal kainą
         /// </summary>
         /// <param name="cheapest">Pigiausi šaldytuvai</param>
-        /// <returns></returns>
+        /// <returns>Surikiuotu šaldytuvus pagal kainą</returns>
         public RefrigeratorContainer SortCheapest(Branch cheapest)
         {
             Refrigerator temp = new Refrigerator();
@@ -411,7 +411,7 @@ namespace L2_U2_10
         }
 
         /// <summary>
-        /// Įrašo į failą gamintojus, kurie yra tik vienoje parduotuvėje
+        /// Įrašo į failą gamintojus, kurių produktus galima isigyti tik vienoje parduotuvėje
         /// </summary>
         /// <param name="manufacturersElektro">Pirmos parduotuvės gamintojai</param>
         /// <param name="manufacturersSams">Antros parduotuvės gamintojai</param>
